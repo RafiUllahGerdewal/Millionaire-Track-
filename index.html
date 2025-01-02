@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .container {
+        margin: 20px auto;
+        max-width: 800px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      h2 {
+        font-size: 1.1em;
+        color: #333;
+        font-weight: normal;
+        margin: 20px;
+        text-align: justify;
+      }
+
+      .course-category {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+
+      .course-category:hover {
+        background-color: #e0e0e0;
+      }
+
+      .course-details {
+        display: none;
+        padding: 10px;
+        background-color: #fafafa;
+      }
+
+      .cta {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .cta .enroll-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff5722;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .cta .enroll-btn:hover {
+        background-color: #e64a19;
+      }
+
+      .testimonials {
+        padding: 20px;
+        background-color: #f5f5f5;
+        margin: 20px;
+        border-radius: 8px;
+      }
+
+      .testimonial {
+        font-style: italic;
+        margin: 15px 0;
+        color: #555;
+      }
+
+      .testimonial span {
+        font-weight: bold;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .contact-icons a {
+        color: #4caf50;
+        font-size: 1.5em;
+        text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          margin: 10px;
+          padding: 10px;
+        }
+
+        h2 {
+          font-size: 1em;
+        }
+
+        .cta p {
+          font-size: 0.9em;
+        }
+
+        .course-category {
+          font-size: 0.9em;
+          padding: 10px;
+        }
+
+        .contact-info p {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+    <script>
+      function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display =
+          details.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Our Courses</h1>
+    </header>
+
+    <div class="container">
+      <h2>
+        Access over 20 expertly designed courses taught by industry leaders.
+        Build valuable skills in high-demand fields, unlock exciting career
+        opportunities, and earn while you learn with our step-by-step guide.
+      </h2>
+
+      <div class="course-category" onclick="toggleDetails('data-science')">
+        Data Science
+      </div>
+      <div id="data-science" class="course-details">
+        <ul>
+          <li>Power BI</li>
+          <li>Machine Learning</li>
+          <li>Python</li>
+          <li>Data Analytics/Data Science</li>
+          <li>CFD Aerospace</li>
+        </ul>
+      </div>
+
+      <div class="course-category" onclick="toggleDetails('finance')">
+        Finance Mastery
+      </div>
+      <div id="finance" class="course-details">
+        <ul>
+          <li>Stock Market</li>
+          <li>Option Trading</li>
+        </ul>
+      </div>
+
+      <div class="course-category" onclick="toggleDetails('online-marketing')">
+        Online Marketing
+      </div>
+      <div id="online-marketing" class="course-details">
+        <ul>
+          <li>Google Ads</li>
+          <li>Facebook Ads</li>
+          <li>LinkedIn Marketing</li>
+          <li>Microsoft Ads</li>
+          <li>YouTube Marketing</li>
+          <li>Email Marketing</li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <a
+          class="enroll-btn"
+          href="https://millionairetrack.com/register_id/unique_id=1734579642/mt_id=MT0002816783/package=15"
+          target="_blank"
+          >Enroll Now</a
+        >
+        <p>All courses available for less than ₹8999!</p>
+      </div>
+
+      <div class="testimonials">
+        <h3>What People Are Saying</h3>
+        <div class="testimonial">
+          <p>
+            "Millionaire Track changed my life! The courses are top-notch, and
+            the selling guide helped me generate a steady income."
+            <span>- John D.</span>
+          </p>
+        </div>
+        <div class="testimonial">
+          <p>
+            "I gained skills that boosted my career. The support is
+            outstanding!" <span>- Sarah M.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <p>Contact us: 9611790922</p>
+        <div class="contact-icons">
+          <a href="mailto:Rafi.zabi456@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://instagram.com/4015rfiullah"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
+</html>
